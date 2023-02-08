@@ -1,0 +1,20 @@
+@media (min-width: 768px){
+    .nav{
+        &__btn{
+            display: none;
+        }
+        &__items{
+            display: block;
+            margin-left: auto;
+            padding: 0 0.5em;
+            font-size: 2rem;
+        }
+        &__link{
+            padding: 0.5em 1em;
+            &:focus{
+                outline: none;
+                color: aliceblue;
+            }
+        }
+    }
+}
