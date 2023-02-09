@@ -1,16 +1,22 @@
-@media (min-width: 768px){
+@media (min-width: 996px){
     .nav{
+        height: 50px;
         &__btn{
             display: none;
         }
+        &__logo:link{
+            font-size: 3rem;
+        }
         &__items{
-            display: block;
-            margin-left: auto;
-            padding: 0 0.5em;
-            font-size: 2rem;
+            position: static;
+            flex-direction: row;            
+            transform: translateY(0);            
+            width: auto;
+            font-size: 3rem;
+            // font-size: 2rem;
         }
         &__link{
-            padding: 0.5em 1em;
+            padding: 0 0.5em;
             &:focus{
                 outline: none;
                 color: aliceblue;

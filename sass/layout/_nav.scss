@@ -2,18 +2,20 @@
 .nav {
 	position: fixed;
 	top: 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	width: 100%;
+	height: 40px;
 	padding: 0 1em;
-	height: 50px;
 	background-color: colors.$nav-bg;
 	-webkit-tap-highlight-color: transparent;
 	z-index: 100;
+	&__box{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
 	&__logo:link {
-        display: block;
-		font-size: 1.6rem;
-		font-weight: 600;
+		font-size: 2rem;
 		&:hover {
 			cursor: pointer;
 		}
@@ -28,8 +30,6 @@
 	}
     &__logo-text{
         padding: 0 0.5em;
-        height: 30px;
-        line-height: 30px;
     }
 	&__logo-icon,
 	&__logo-span {
@@ -65,8 +65,27 @@
 	}
 	&__bars {
 		font-size: 2rem;
+		color: colors.$white-color;
 	}
 	&__items {
-		display: none;
+		position: absolute;
+		top: 40px;
+		width: 100%;
+		padding: 0 .5em;
+		display: flex;
+		flex-direction: column;
+		font-size: 2rem;
+		background-color: colors.$nav-bg;
+		transform: translateY(-200%);
+		transition: transform .93s;
+		z-index: -10;
 	}
+	&__link{
+		padding: .3em 0;
+	}
+
+	&__items--active{
+		transform: translateY(0);
+	}
+
 }
