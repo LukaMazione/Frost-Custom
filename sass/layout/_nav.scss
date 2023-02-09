@@ -3,34 +3,28 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	height: 40px;
-	padding: 0 1em;
+	height: 50px;
+	padding: 0.7em;
 	background-color: colors.$nav-bg;
 	-webkit-tap-highlight-color: transparent;
 	z-index: 100;
-	&__box{
+	&__box {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		height: 100%;
 	}
-	&__logo:link {
-		font-size: 2rem;
-		&:hover {
-			cursor: pointer;
+	&__logo {
+		font-size: 1.8rem;
+		padding: 0.2em 0.5em;
+		border: 0.5px solid transparent;
+		&:focus {
+			outline: none;
+			color: colors.$outline;
+			border: 0.5px solid colors.$outline;
+			border-radius: 7px;
 		}
-		&:active {
-            color: unset;
-		}
-        &:focus {
-            outline: none;
-            border: 0.7px solid colors.$outline;
-            border-radius: 7px;
-        }
 	}
-    &__logo-text{
-        padding: 0 0.5em;
-    }
 	&__logo-icon,
 	&__logo-span {
 		color: colors.$royal-blue;
@@ -42,10 +36,10 @@
 	&__btn {
 		width: 30px;
 		height: 30px;
-		padding: 0.5em;
 		background-color: transparent;
 		border: none;
 		overflow: hidden;
+		border: .7px solid transparent;
 		&:hover {
 			cursor: pointer;
 		}
@@ -69,23 +63,24 @@
 	}
 	&__items {
 		position: absolute;
-		top: 40px;
+		top: 50px;
+		left: 0;
 		width: 100%;
-		padding: 0 .5em;
+		height: 170px;
+		padding: 0 0.5em;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-evenly;
 		font-size: 2rem;
 		background-color: colors.$nav-bg;
 		transform: translateY(-200%);
-		transition: transform .93s;
-		z-index: -10;
+		transition: transform 0.93s;
 	}
-	&__link{
-		padding: .3em 0;
+	&__link {
+		padding: 0.1em 0;
 	}
 
-	&__items--active{
+	&__items--active {
 		transform: translateY(0);
 	}
-
 }
