@@ -1,6 +1,13 @@
 @use '../abstracts/colors';
+
 @mixin focus {
 	outline: none;
 	border: 0.5px solid colors.$outline;
 	border-radius: 5px;
+}
+
+@mixin heroImages($bgImg){
+    background-image: url($bgImg);
+    background-size: cover;
+    background-position: center;
 }
