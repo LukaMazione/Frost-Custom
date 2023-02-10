@@ -21,6 +21,11 @@
 			padding: 0.2em 0.6em;
 		}
 	}
+    .header{
+        &__img{
+            height: 50vh;
+        }
+    }
 }
 @media (min-width: 996px) {
 	.nav {
