@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.header').slick({
+    $('.header__box').slick({
     mobileFirst: true,
     autoplay: true,
     infinite: true,

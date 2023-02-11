@@ -1,20 +1,68 @@
 @use '../abstracts/mixins';
 @use '../abstracts/colors';
-.header{
-    margin-top: 50px;
-    width: 100%;
+.header {
+	margin-top: 50px;
+	width: 100%;
+	&__text,
+	&__info-text {
+		font-weight: 300;
+	}
+	&__img {
+		position: relative;
+		height: 70vh;
+	}
+	&__img-box {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font-size: 1.4rem;
+		color: colors.$white-color;
+		z-index: 10;
+	}
+	&__img-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: colors.$header-shadow;
+	}
 
-    &__img{
-        height: 70vh;
-    }
+	&__img-one {
+		@include mixins.heroImages('../img/main-carousel-1.jpg');
+	}
+	&__img-two {
+		@include mixins.heroImages('../img/main-carousel-2.jpg');
+	}
+	&__img-three {
+		@include mixins.heroImages('../img/main-carousel-3.jpg');
+	}
 
-    &__img-one{
-        @include mixins.heroImages('../img/main-carousel-1.jpg');
-    }
-    &__img-two{
-        @include mixins.heroImages('../img/main-carousel-2.jpg');
-    }
-    &__img-three{
-        @include mixins.heroImages('../img/main-carousel-3.jpg');
-    }
+	&__info {
+		margin-top: 2em;
+		padding: 2em 1em;
+
+		&-box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			row-gap: 2em;
+		}
+		&-card {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			row-gap: 1rem;
+			padding: 0.5em 1em;
+            margin-bottom: 1em;
+			font-size: 1.8rem;
+			text-align: center;
+			// border: 1px solid red;
+		}
+
+		&-icon {
+			font-size: 2.6rem;
+		}
+	}
 }

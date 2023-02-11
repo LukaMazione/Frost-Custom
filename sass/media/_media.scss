@@ -1,5 +1,21 @@
 @use '../abstracts/colors';
 
+@media (min-width: 400px) {
+	.header {
+		&__info {
+			&-card {
+				font-size: 2.2rem;
+			}
+			&-icon {
+				font-size: 3rem;
+			}
+		}
+		&__img-box {
+			font-size: 1.6rem;
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	.nav {
 		height: 60px;
@@ -15,17 +31,33 @@
 		}
 		&__items {
 			font-size: 2.4rem;
-            height: 220px;
+			height: 220px;
 		}
 		&__link {
 			padding: 0.2em 0.6em;
 		}
 	}
-    .header{
-        &__img{
-            height: 50vh;
+	.header {
+		&__img {
+			height: 50vh;
+		}
+
+        &__img-box{
+            font-size: 2.2rem;
         }
-    }
+		&__info {
+			&-box {
+				flex-direction: row;
+				justify-content: center;
+			}
+			&-card {
+				font-size: 2.8rem;
+			}
+			&-icon {
+				font-size: 3.2rem;
+			}
+		}
+	}
 }
 @media (min-width: 996px) {
 	.nav {

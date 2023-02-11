@@ -1,5 +1,9 @@
 @use '../abstracts/colors';
 @use '../abstracts/mixins';
+
+// .slick-slide{
+//     position: relative;
+// }
 .slick-dots {
 	position: absolute;
 	bottom: 0;
