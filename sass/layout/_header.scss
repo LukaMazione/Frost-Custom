@@ -1,7 +1,6 @@
 @use '../abstracts/mixins';
 @use '../abstracts/colors';
 .header{
-    position: relative;
     margin-top: 50px;
     width: 100%;
 
@@ -18,13 +17,4 @@
     &__img-three{
         @include mixins.heroImages('../img/main-carousel-3.jpg');
     }
-    &__img-shadow{
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: colors.$header-shadow;
-    }
-
 }

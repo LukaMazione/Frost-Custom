@@ -1,3 +1,5 @@
-1) dokończyć media z nav
-3) hero slajder
-2) navigacja do przerobienia po slick js
+
+# navigacja do przerobienia żeby zjeżdżała w dól razem ze slajderem window scroll
+
+# przejżeć media
+
