@@ -30,7 +30,7 @@
 
 .about-hero{
     position: relative;
-    height: 300px;
+    height: 250px;
     width: 100%;
     @include mixins.heroImages('../img/sunset-low.jpg');
     z-index: 0;
@@ -41,8 +41,8 @@
 
     &__text-box{
         position: absolute;
+        // left: 1em;
+        padding: 2em;
         color:white;
-        font-size: 1.8rem;
-        z-index: 10;
-    }
+}
 }
