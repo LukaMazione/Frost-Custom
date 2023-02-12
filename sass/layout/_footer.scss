@@ -1,0 +1,12 @@
+@use '../abstracts/colors';
+.footer{
+    font-size: 1.6rem;
+    padding: 1em;
+    background-color: colors.$nav-bg;
+    text-align: center;
+    color: colors.$white-color;
+
+    &__icon, &__span{
+        color: colors.$royal-blue;
+    }
+}

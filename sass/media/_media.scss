@@ -74,10 +74,27 @@
 			font-size: 3.2rem;
 		}
 	}
+
+    .about-history{
+        &__box{
+            flex-direction: row;
+        }
+        &__left{
+            width: 50%;
+        }
+        &__right{
+            width: 50%;
+        }
+    }
+    .footer{
+        font-size: 2rem;
+    }
 }
 @media (min-width: 996px) {
     .section-heading{
         font-size: 3rem;
+    }.about-history__left-heading{
+        font-size: 2.2rem;
     }
     .hero-text{
         font-size: 2rem;
@@ -123,4 +140,7 @@
 			@include mixins.heroImages('../img/main-carousel-3-hq.jpg');
 		}
 	}
+    .footer{
+        font-size: 2.2rem;
+    }
 }
