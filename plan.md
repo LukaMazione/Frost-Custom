@@ -1,5 +1,5 @@
 
 # navigacja do przerobienia żeby zjeżdżała w dól razem ze slajderem window scroll
 
-# przejżeć media
+# przy powiekszeniu navigacji ma byc pasek przewijania
 

@@ -1,4 +1,5 @@
 @use '../abstracts/colors';
+@use '../abstracts/mixins';
 
 @media (min-width: 400px) {
 	.header {
@@ -42,20 +43,21 @@
 			height: 50vh;
 		}
 
-        &__img-box{
-            font-size: 2.2rem;
-        }
-		&__info {
-			&-box {
-				flex-direction: row;
-				justify-content: center;
-			}
-			&-card {
-				font-size: 2.8rem;
-			}
-			&-icon {
-				font-size: 3.2rem;
-			}
+		&__img-box {
+			font-size: 2.2rem;
+		}
+	}
+
+	.about-us {
+		&__box {
+			flex-direction: row;
+			justify-content: center;
+		}
+		&__card {
+			font-size: 2.8rem;
+		}
+		&__icon {
+			font-size: 3.2rem;
 		}
 	}
 }
@@ -85,6 +87,20 @@
 			&:focus {
 				border-radius: 8px;
 			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.header {
+		&__img-one {
+			@include mixins.heroImages('../img/main-carousel-1-hq.jpg');
+		}
+		&__img-two {
+			@include mixins.heroImages('../img/main-carousel-2-hq.jpg');
+		}
+		&__img-three {
+			@include mixins.heroImages('../img/main-carousel-3-hq.jpg');
 		}
 	}
 }

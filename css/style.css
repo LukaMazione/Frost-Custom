@@ -129,14 +129,16 @@ a {
 .header__img {
   position: relative;
   height: 70vh;
+  z-index: 0;
 }
 .header__img-box {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-40%, -40%);
+  width: 80%;
   font-size: 1.4rem;
   color: #dae1e8;
-  z-index: 10;
 }
 .header__img-shadow {
   position: absolute;
@@ -145,6 +147,7 @@ a {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: -10;
 }
 .header__img-one {
   background-image: url("../img/main-carousel-1.jpg");
@@ -161,17 +164,18 @@ a {
   background-size: cover;
   background-position: center;
 }
-.header__info {
+
+.about-us {
   margin-top: 2em;
   padding: 2em 1em;
 }
-.header__info-box {
+.about-us__box {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 2em;
 }
-.header__info-card {
+.about-us__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,7 +186,7 @@ a {
   font-size: 1.8rem;
   text-align: center;
 }
-.header__info-icon {
+.about-us__icon {
   font-size: 2.6rem;
 }
 
@@ -224,14 +228,14 @@ a {
   .header__img-box {
     font-size: 2.2rem;
   }
-  .header__info-box {
+  .about-us__box {
     flex-direction: row;
     justify-content: center;
   }
-  .header__info-card {
+  .about-us__card {
     font-size: 2.8rem;
   }
-  .header__info-icon {
+  .about-us__icon {
     font-size: 3.2rem;
   }
 }
@@ -262,6 +266,23 @@ a {
   }
   .nav__link:focus {
     border-radius: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .header__img-one {
+    background-image: url("../img/main-carousel-1-hq.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .header__img-two {
+    background-image: url("../img/main-carousel-2-hq.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .header__img-three {
+    background-image: url("../img/main-carousel-3-hq.jpg");
+    background-size: cover;
+    background-position: center;
   }
 }
 .slick-dots {
