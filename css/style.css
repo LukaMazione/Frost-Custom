@@ -5,7 +5,14 @@
 }
 
 .section-padding {
-  padding: 2em 1em;
+  padding: 3em 1em;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #dae1e8;
 }
 
 .hero-shadow {
@@ -14,7 +21,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6));
   z-index: -10;
 }
 
@@ -132,6 +139,9 @@ a {
   border: 0.5px solid rgb(207, 226, 243);
   border-radius: 5px;
 }
+.nav__link:hover {
+  color: #4169e1;
+}
 .nav__items--active {
   transform: translateY(0);
 }
@@ -139,14 +149,14 @@ a {
 .header {
   margin-top: 50px;
   width: 100%;
+  overflow: hidden;
 }
 .header__text, .header__info-text {
   font-weight: 300;
 }
 .header__img {
   position: relative;
-  height: 70vh;
-  z-index: 0;
+  height: 400px;
 }
 .header__img-box {
   position: absolute;
@@ -158,19 +168,23 @@ a {
   color: #dae1e8;
 }
 .header__img-one {
-  background-image: url("../img/main-carousel-1.jpg");
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/main-carousel-1.jpg");
   background-size: cover;
   background-position: center;
 }
 .header__img-two {
-  background-image: url("../img/main-carousel-2.jpg");
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/main-carousel-2.jpg");
   background-size: cover;
   background-position: center;
 }
 .header__img-three {
-  background-image: url("../img/main-carousel-3.jpg");
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/main-carousel-3.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.main {
+  overflow: hidden;
 }
 
 .about-us {
@@ -202,10 +216,9 @@ a {
   position: relative;
   height: 250px;
   width: 100%;
-  background-image: url("../img/sunset-low.jpg");
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/sunset-low.jpg");
   background-size: cover;
   background-position: center;
-  z-index: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,6 +270,77 @@ a {
 }
 .footer__icon, .footer__span {
   color: #4169e1;
+}
+
+.about-us__header {
+  margin-top: 50px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.about-us__header-hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/about/hd-wallpaper-2025863_640.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position: bottom;
+}
+.about-us__header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.frost {
+  padding: 1em;
+}
+.frost__title {
+  margin-bottom: 0.5em;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.frost__text {
+  margin-bottom: 0.5em;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.section-passion {
+  background-color: #eceae9;
+}
+.section-passion .passion {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-passion .passion__box {
+  padding: 1em;
+}
+.section-passion .passion__box--right {
+  text-align: right;
+}
+.section-passion .passion__title {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  -webkit-text-decoration: underline #4169e1 2px;
+          text-decoration: underline #4169e1 2px;
+  margin-bottom: 0.5em;
+}
+.section-passion .passion__text {
+  font-size: 1.4rem;
+}
+.section-passion .passion__img {
+  padding: 1em 0.5em;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .slick-dots {
@@ -329,6 +413,9 @@ a {
   .section-heading {
     font-size: 2.4rem;
   }
+  .section-title {
+    font-size: 2.8rem;
+  }
   .hero-text {
     font-size: 1.6rem;
   }
@@ -340,6 +427,38 @@ a {
   }
   .header__img-box {
     font-size: 1.6rem;
+  }
+  .frost__title {
+    font-size: 2.8rem;
+  }
+  .frost__text {
+    font-size: 1.8rem;
+  }
+  .section-passion .passion__title {
+    font-size: 2.4rem;
+  }
+  .section-passion .passion__text {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 576px) {
+  .section-title {
+    font-size: 3em;
+  }
+  .section-padding {
+    padding: 4em 2em;
+  }
+  .frost__title {
+    font-size: 3rem;
+  }
+  .frost__text {
+    font-size: 2rem;
+  }
+  .section-passion .passion__title {
+    font-size: 2.6rem;
+  }
+  .section-passion .passion__text {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 768px) {
@@ -425,7 +544,7 @@ a {
     flex-direction: row;
     width: auto;
     height: auto;
-    font-size: 3rem;
+    font-size: 2.6rem;
     transform: translateY(0);
   }
   .nav__link {
@@ -437,22 +556,54 @@ a {
   }
 }
 @media (min-width: 1024px) {
+  .section-title {
+    font-size: 4rem;
+  }
+  .section-padding {
+    padding: 6em auto;
+  }
   .header__img-one {
-    background-image: url("../img/main-carousel-1-hq.jpg");
+    background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/main-carousel-1-hq.jpg");
     background-size: cover;
     background-position: center;
   }
   .header__img-two {
-    background-image: url("../img/main-carousel-2-hq.jpg");
+    background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/main-carousel-2-hq.jpg");
     background-size: cover;
     background-position: center;
   }
   .header__img-three {
-    background-image: url("../img/main-carousel-3-hq.jpg");
+    background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/main-carousel-3-hq.jpg");
     background-size: cover;
     background-position: center;
   }
   .footer {
     font-size: 2.2rem;
+  }
+  .about-us__header {
+    height: 300px;
+  }
+  .about-us__header-hero {
+    background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/about/hd-wallpaper-2025863_1920.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .frost {
+    padding: 2em 1em;
+  }
+  .frost__title {
+    font-size: 3.4rem;
+  }
+  .frost__text {
+    font-size: 2.2rem;
+  }
+  .section-passion .passion__title {
+    font-size: 3rem;
+  }
+  .section-passion .passion__text {
+    font-size: 2.2rem;
+  }
+  .section-passion .passion__img {
+    height: 400px;
   }
 }/*# sourceMappingURL=style.css.map */

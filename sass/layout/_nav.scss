@@ -82,6 +82,9 @@
 		&:focus {
 			@include mixins.focus;
 		}
+	&:hover{
+		color: colors.$royal-blue;
+	}
 	}
 
 	&__items--active {

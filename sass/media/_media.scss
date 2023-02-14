@@ -2,12 +2,15 @@
 @use '../abstracts/mixins';
 
 @media (min-width: 400px) {
-    .section-heading{
-        font-size: 2.4rem;
-    }
-    .hero-text{
-        font-size: 1.6rem;
-    }
+	.section-heading {
+		font-size: 2.4rem;
+	}
+	.section-title {
+		font-size: 2.8rem;
+	}
+	.hero-text {
+		font-size: 1.6rem;
+	}
 	.header {
 		&__info {
 			&-card {
@@ -21,17 +24,64 @@
 			font-size: 1.6rem;
 		}
 	}
+
+	//about-us.html
+	.frost {
+		&__title {
+			font-size: 2.8rem;
+		}
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+	.section-passion{
+        .passion {
+            &__title {
+                font-size: 2.4rem;
+            }
+            &__text {
+                font-size: 1.6rem;
+            }
+        }
+    }
 }
 
+@media (min-width: 576px) {
+	.section-title {
+		font-size: 3em;
+	}
+	.section-padding {
+		padding: 4em 2em;
+	}
+	//about-us.html
 
+	.frost {
+		&__title {
+			font-size: 3rem;
+		}
+		&__text {
+			font-size: 2rem;
+		}
+	}
+    .section-passion{
+        .passion {
+            &__title {
+                font-size: 2.6rem;
+            }
+            &__text {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
 
 @media (min-width: 768px) {
-    .section-heading{
-        font-size: 2.6rem;
-    }
-    .hero-text{
-        font-size: 2rem;
-    }
+	.section-heading {
+		font-size: 2.6rem;
+	}
+	.hero-text {
+		font-size: 2rem;
+	}
 	.nav {
 		height: 60px;
 		&__logo {
@@ -75,30 +125,31 @@
 		}
 	}
 
-    .about-history{
-        &__box{
-            flex-direction: row;
-        }
-        &__left{
-            width: 50%;
-        }
-        &__right{
-            width: 50%;
-        }
-    }
-    .footer{
-        font-size: 2rem;
-    }
+	.about-history {
+		&__box {
+			flex-direction: row;
+		}
+		&__left {
+			width: 50%;
+		}
+		&__right {
+			width: 50%;
+		}
+	}
+	.footer {
+		font-size: 2rem;
+	}
 }
 @media (min-width: 996px) {
-    .section-heading{
-        font-size: 3rem;
-    }.about-history__left-heading{
-        font-size: 2.2rem;
-    }
-    .hero-text{
-        font-size: 2rem;
-    }
+	.section-heading {
+		font-size: 3rem;
+	}
+	.about-history__left-heading {
+		font-size: 2.2rem;
+	}
+	.hero-text {
+		font-size: 2rem;
+	}
 	.nav {
 		padding: 1em 0;
 		&__btn {
@@ -115,7 +166,7 @@
 			flex-direction: row;
 			width: auto;
 			height: auto;
-			font-size: 3rem;
+			font-size: 2.6rem;
 			transform: translateY(0);
 		}
 		&__link {
@@ -129,6 +180,12 @@
 }
 
 @media (min-width: 1024px) {
+	.section-title {
+		font-size: 4rem;
+	}
+	.section-padding {
+		padding: 6em auto;
+	}
 	.header {
 		&__img-one {
 			@include mixins.heroImages('../img/main-carousel-1-hq.jpg');
@@ -140,7 +197,42 @@
 			@include mixins.heroImages('../img/main-carousel-3-hq.jpg');
 		}
 	}
-    .footer{
-        font-size: 2.2rem;
+	.footer {
+		font-size: 2.2rem;
+	}
+
+	//about-us.html
+	.about-us {
+		&__header {
+			height: 300px;
+			&-hero {
+				@include mixins.heroImages(
+					'../img/about/hd-wallpaper-2025863_1920.jpg'
+				);
+			}
+		}
+	}
+
+	.frost {
+		padding: 2em 1em;
+		&__title {
+			font-size: 3.4rem;
+		}
+		&__text {
+			font-size: 2.2rem;
+		}
+	}
+    .section-passion{
+        .passion {
+            &__title {
+                font-size: 3rem;
+            }
+            &__text {
+                font-size: 2.2rem;
+            }
+            &__img{
+                height: 400px;
+            }
+        }
     }
 }
