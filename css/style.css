@@ -130,6 +130,9 @@ a {
   transform: translateY(-200%);
   transition: transform 0.93s;
 }
+.nav__items .active {
+  color: #4169e1;
+}
 .nav__link {
   width: 40%;
   padding: 0.1em 0;

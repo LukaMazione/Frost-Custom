@@ -72,6 +72,9 @@
 		background-color: colors.$nav-bg;
 		transform: translateY(-200%);
 		transition: transform 0.93s;
+		.active{
+			color: colors.$royal-blue;
+		}
 		
 	}
 
