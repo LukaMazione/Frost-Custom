@@ -139,6 +139,12 @@
 	.footer {
 		font-size: 2rem;
 	}
+	.cards{
+		align-content: space-evenly;
+		&__card{
+			width: 45%;		
+		}
+	}
 }
 @media (min-width: 996px) {
 	.section-heading {
@@ -205,6 +211,12 @@
 					align-self: baseline;
 				}
 			}
+		}
+	}
+	.cards{
+		&__card{
+			width: 30%;
+			
 		}
 	}
 }

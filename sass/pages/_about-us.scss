@@ -67,3 +67,44 @@
 		}
 	}
 }
+.cards{
+	&__box{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 1em;
+		color: colors.$white-color;
+	}
+	&__card{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding: 1.5em;
+		margin: 1em;
+		&:nth-child(odd){
+			background-color: #212529;
+		}
+		&:nth-child(even){
+			background-color: #0d6efd;
+		}
+	}
+	&__icon{
+		font-size: 3rem;
+		align-self: center;
+		text-align: center;
+		width: 40%;
+		padding: 1em;
+	}
+	&__info{
+		width: 60%;
+		padding: 1em;
+		text-align: left;
+	}
+	&__title{
+		font-size: 2rem;
+		margin-bottom: 0.5em;
+	}
+	&__text{
+		font-size: 1.4rem;
+	}
+}
