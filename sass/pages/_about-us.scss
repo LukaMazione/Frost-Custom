@@ -36,34 +36,33 @@
 		text-align: justify;
 	}
 }
-.section-passion{
-    background-color: #eceae9;
-    .passion{
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &__box{
-            padding: 1em;
-            &--right{
-                text-align: right;
-            }
-        }
-        &__title{
-            font-size: 2.2rem;
-            text-transform: uppercase;
-            text-decoration: underline colors.$royal-blue 2px;
-            margin-bottom: 0.5em;
-        }
-        &__text{
-            font-size: 1.4rem;
-        }
-        &__img{
-            padding: 1em 0.5em;
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            object-position: center;
-        }
-    }
+.section-passion {
+	background-color: #eceae9;
+	padding: 0 2em;
+
+	.passion {
+		overflow: hidden;
+		&__box {
+			padding: 1em;
+			&--right {
+				text-align: right;
+			}
+		}
+		&__title {
+			font-size: 2.2rem;
+			text-transform: uppercase;
+			text-decoration: underline colors.$royal-blue 2px;
+			margin-bottom: 0.5em;
+		}
+		&__text {
+			font-size: 1.4rem;
+		}
+		&__img {
+			padding: 0 0.5em;
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
 }
