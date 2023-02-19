@@ -197,7 +197,7 @@
 				height: auto;
 				width: 30%;
 				transform: skew(-20deg);
-				// flex: 0 0 auto;
+				flex: 0 0 auto;
 			}
 			&__box {
 				padding: 8em 3em 8em 0;
@@ -207,6 +207,7 @@
 				align-self: baseline;
 				&--right {
 					padding: 8em 0 8em 3em;
+					
 					text-align: left;
 					align-self: baseline;
 				}

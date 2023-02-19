@@ -275,6 +275,9 @@ a {
   color: #4169e1;
 }
 
+.about-us a:target {
+  transition: scroll 5s;
+}
 .about-us__header {
   margin-top: 50px;
   width: 100%;
@@ -616,6 +619,7 @@ a {
     height: auto;
     width: 30%;
     transform: skew(-20deg);
+    flex: 0 0 auto;
   }
   .section-passion .passion__box {
     padding: 8em 3em 8em 0;
