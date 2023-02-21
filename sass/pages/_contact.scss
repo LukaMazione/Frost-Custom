@@ -1,7 +1,13 @@
 @use '../abstracts/colors';
 @use '../abstracts/mixins';
-.about-us__header-hero {
-	@include mixins.heroImages('../img/kontakt/shelby-low.jpg');
+.header-contact {
+	&__hero {
+		@include mixins.pageHero;
+		@include mixins.heroImages('../img/kontakt/shelby-low.jpg');
+	}
+	&__heading {
+		@include mixins.heroHeading;
+	}
 }
 .contact {
 	display: flex;
@@ -15,21 +21,21 @@
 		margin-top: 0.5em;
 	}
 	&-form {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 1em;
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 1em;
 		&__heading {
 			font-size: 1.8rem;
 			margin-top: 0.5em;
 			text-transform: uppercase;
 		}
 		&__date {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex: 1 0 auto;
-            padding: 2em 1em;
-            margin-top: 1em;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex: 1 0 auto;
+			padding: 2em 1em;
+			margin-top: 1em;
 			box-shadow: 0px 0px 15px 3px colors.$border-form inset;
 			&-heading {
 				font-size: 1.6rem;
@@ -45,7 +51,7 @@
 		.form {
 			// display: flex;
 			// flex-direction: column;
-            flex: 3 0 auto;
+			flex: 3 0 auto;
 			padding: 2em 1em;
 			margin-top: 1em;
 			box-shadow: 0px 0px 15px 3px colors.$border-form inset;

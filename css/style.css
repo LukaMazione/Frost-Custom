@@ -15,6 +15,13 @@
   color: #dae1e8;
 }
 
+.page-header {
+  margin-top: 60px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
 .hero-shadow {
   position: absolute;
   top: 0;
@@ -275,22 +282,15 @@ a {
   color: #4169e1;
 }
 
-.about-us__header {
-  margin-top: 50px;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-.about-us__header-hero {
+.header-about__hero {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/about/hd-wallpaper-2025863_640.jpg");
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/about/about-hero-low.jpg");
   background-size: cover;
   background-position: center;
-  background-position: bottom;
 }
-.about-us__header-title {
+.header-about__heading {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -383,10 +383,19 @@ a {
   font-size: 1.4rem;
 }
 
-.about-us__header-hero {
+.header-contact__hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
   background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/kontakt/shelby-low.jpg");
   background-size: cover;
   background-position: center;
+}
+.header-contact__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .contact {
@@ -475,22 +484,16 @@ a {
   cursor: pointer;
 }
 
-.services__header {
-  margin-top: 60px;
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-.services__header-hero {
+.header-services__hero {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/servic/car-low.jpg");
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/about/about-hero-low.jpg");
   background-size: cover;
   background-position: center;
   background-position-y: 250px;
 }
-.services__header-title {
+.header-services__heading {
   position: absolute;
   top: 50%;
   left: 50%;
