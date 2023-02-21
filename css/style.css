@@ -275,9 +275,6 @@ a {
   color: #4169e1;
 }
 
-.about-us a:target {
-  transition: scroll 5s;
-}
 .about-us__header {
   margin-top: 50px;
   width: 100%;
@@ -478,6 +475,85 @@ a {
 }
 .contact-form .form__button:hover {
   cursor: pointer;
+}
+
+.services__header {
+  margin-top: 60px;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.services__header-hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/servic/car-low.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position-y: 250px;
+}
+.services__header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.services .section-heading {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.services__text {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+.services__box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+}
+.services__hero-text {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services__opt {
+  position: relative;
+  height: 300px;
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: unset;
+  color: beige;
+}
+.services__opt-1 {
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/servic/engine.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.services__opt-2 {
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/servic/visual.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.services__opt-3 {
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/servic/car-audio.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.services__opt-4 {
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/servic/allinone.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.services__hero-text {
+  flex: 1 0 auto;
+  text-align: center;
 }
 
 .slick-dots {

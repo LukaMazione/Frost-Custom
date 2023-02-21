@@ -1,9 +1,6 @@
 @use '../abstracts/mixins';
 @use '../abstracts/colors';
 .about-us {
-	a:target{
-		transition: scroll 5s;
-	}
 	&__header {
 		margin-top: 50px;
 		width: 100%;

@@ -1,0 +1,81 @@
+@use '../abstracts/mixins';
+@use '../abstracts/colors';
+.services__header {
+	margin-top: 60px;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	&-hero {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		@include mixins.heroImages('../img/servic/car-low.jpg');
+		background-position-y: 250px;
+	}
+	&-title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.services {
+    .section-heading{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    &__text{
+        font-size: 1.4rem;
+        text-align: justify;
+        
+    }
+	&__box {
+		display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 2em;
+	}
+    &__hero-text{
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+	&__opt {
+		position: relative;
+        height: 300px;
+        // width: 300px;
+        flex: 0 1 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        word-break: unset;
+        color: beige;
+        
+	}
+    &__opt-1{
+        @include mixins.heroImages('../img/servic/engine.jpg');
+    }
+    &__opt-2{
+        @include mixins.heroImages('../img/servic/visual.jpg');
+    }
+    &__opt-3{
+        @include mixins.heroImages('../img/servic/car-audio.jpg');
+    }
+    &__opt-4{
+        @include mixins.heroImages('../img/servic/allinone.jpg');
+    }
+    // &__hero-text{
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     color: white;
+    // }
+    &__hero-text{
+        flex: 1 0 auto;
+        text-align: center;
+    }
+}
