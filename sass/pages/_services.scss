@@ -31,7 +31,6 @@
     }
 	&__box {
 		display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         gap: 1em;
         margin-top: 2em;
@@ -46,12 +45,9 @@
 	&__opt {
 		position: relative;
         height: 300px;
-        // width: 300px;
-        flex: 0 1 auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        word-break: unset;
         color: beige;
         
 	}
@@ -79,3 +75,4 @@
         text-align: center;
     }
 }
+
