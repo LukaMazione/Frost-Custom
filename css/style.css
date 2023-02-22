@@ -415,6 +415,8 @@ a {
   flex-wrap: wrap;
   -moz-column-gap: 1em;
        column-gap: 1em;
+  margin: 1em 0;
+  padding: 1em 0;
 }
 .contact-form__heading {
   font-size: 1.8rem;
