@@ -16,9 +16,9 @@
 }
 
 .page-header {
-  margin-top: 60px;
+  margin-top: 50px;
   width: 100%;
-  height: 200px;
+  height: 210px;
   overflow: hidden;
 }
 
@@ -381,6 +381,53 @@ a {
 }
 .cards__text {
   font-size: 1.4rem;
+}
+
+.header-projects__hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, rgba(10, 9, 9, 0.8), rgba(9, 2, 2, 0.6)), url("../img/projects/project-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.header-projects__heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.projects h3:first-child,
+.projects h3:first-child + p {
+  text-align: center;
+}
+.projects h3:first-child + p {
+  font-size: 1.6rem;
+  margin-bottom: 2em;
+}
+.projects__box {
+  display: flex;
+  flex-flow: wrap;
+  gap: 2em;
+}
+.projects__card {
+  flex: 1 0 300px;
+}
+.projects__card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+.projects__card-body {
+  display: flex;
+  padding: 1em 0;
+}
+.projects__card-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0;
 }
 
 .header-contact__hero {
